@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    --first-color: #ED89ED;
+    --second-color: #810281;
+    --third-color: #800080;
+    --button-color: rgb(239, 176, 239);
+}
+
+body {
+    background-image: linear-gradient(var(--first-color), var(--second-color));
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+#mainDiv #inputDiv {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#mainDiv #inputDiv h1 {
+    font-size: 50px;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    text-shadow: 0 3px 5px var(--third-color);
+}
+
+#mainDiv #inputDiv input {
+    width: 70%;
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    outline-color: var(--third-color);
+}
+
+#mainDiv #inputDiv button {
+    width: 70%;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: var(--button-color);
+    transition: 0.5s;
+}
+
+#mainDiv #inputDiv button:hover {
+    cursor: pointer;
+    background-color: var(--first-color);
+}
+
+#mainDiv #inputDiv button:active {
+    background-color: var(--third-color);
+    color: white;
+}
+
+#mainDiv #resultDiv {
+    text-align: center;
+}
+
+#mainDiv #resultDiv #adsDiv {
+    width: 200px;
+    height: 200px;
+    background-color: var(--first-color);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#mainDiv #resultDiv #canvasDiv {
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 20px;
+}
