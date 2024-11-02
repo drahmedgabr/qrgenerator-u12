@@ -79,4 +79,13 @@ body {
     background-color: white;
     margin-top: 30px;
     border-radius: 20px;
+    padding: 10px;
+    display: none;
+}
+
+#mainDiv #resultDiv #qrText {
+    font-size: 35px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
 }
