@@ -88,4 +88,47 @@ body {
     color: white;
     font-family: 'Courier New', Courier, monospace;
     margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    max-width: 600px;
+    text-align: center;
+    text-wrap: wrap;
+    word-wrap: break-word;
+}
+
+#mainDiv #dividerDiv {
+    width: 5px;
+    height: 60vh;
+    background-color: white;
+    margin: 0 150px;
+    display: none;
+}
+
+
+@media (min-width: 1200px) {
+    
+
+    #mainDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    #mainDiv #dividerDiv {
+        display: block;
+    }
+
+    #mainDiv #inputDiv h1 {
+        font-size: 100px;
+        margin-bottom: 20px;
+    }
+
+    #mainDiv #inputDiv input, #mainDiv #inputDiv button {
+        width: 80%;
+        padding: 30px;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
 }
